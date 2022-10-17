@@ -27,6 +27,8 @@ class Router{
 
 
    $urlActual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
+      $urlActual = explode('?', $urlActual);
+   $urlActual = array_shift($urlActual);
    $metodo = $_SERVER['REQUEST_METHOD'];
 
    if($metodo === 'GET'){
