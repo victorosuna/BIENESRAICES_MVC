@@ -10,7 +10,7 @@ use Controllers\PaginasController;
 
 $router = '\\' . str_replace(DIRECTORY_SEPARATOR, '\\', $router);
 
-$router = new $router();
+$router = new Router();
 
 
 //Zona privada
