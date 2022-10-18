@@ -16,7 +16,7 @@ class Router{
   }
 
   public function comprobarRutas(){
-
+    //aaaa
     session_start();
 
     $auth = $_SESSION['login'] ?? null;
