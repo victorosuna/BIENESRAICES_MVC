@@ -1,4 +1,6 @@
 <?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../includes/app.php';
 
 use MVC\Router;
@@ -8,7 +10,6 @@ use Controllers\VendedorController;
 use Controllers\PaginasController;
 
 
-$router = '\\' . str_replace(DIRECTORY_SEPARATOR, '\\', $router);
 
 $router = new Router();
 
