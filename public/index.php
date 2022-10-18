@@ -7,7 +7,11 @@ use Controllers\PropiedadController;
 use Controllers\VendedorController;
 use Controllers\PaginasController;
 
-$router = new Router();
+
+$router = '\\' . str_replace(DIRECTORY_SEPARATOR, '\\', $router);
+
+$router = new $router();
+
 
 //Zona privada
 $router->get('/admin', [PropiedadController::class, 'index']);
