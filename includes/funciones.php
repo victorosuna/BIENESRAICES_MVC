@@ -47,12 +47,15 @@ function mostrarNotificacion($codigo){
     $mensaje = '';
     switch($codigo){
         case 1: 
+            header("location: /admin");
             $mensaje = "Creado Correctamente";
             break;
         case 2: 
+            header("location: /admin");
             $mensaje = "Actualizado Correctamente";
             break;
         case 3: 
+            header("location: /admin");
             $mensaje = "Eliminado Correctamente";
             break;
         default:
